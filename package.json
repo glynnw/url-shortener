@@ -1,0 +1,32 @@
+{
+  "name": "url_shortener_service",
+  "version": "0.0.0",
+  "description": "Url Shortener",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/glynnw/url-shortener.git"
+  },
+  "keywords": [
+    "url",
+    "shortener"
+  ],
+  "author": "Matthew Westbrook",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glynnw/url-shortener/issues"
+  },
+  "homepage": "https://github.com/glynnw/url-shortener#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.10.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.1",
+    "eslint-plugin-react": "^6.7.1",
+    "mocha": "^3.1.2"
+  }
+}
