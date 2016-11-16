@@ -1,5 +1,5 @@
 {
-  "name": "url_shortener_service",
+  "name": "url-shortener-service",
   "version": "0.1.0",
   "description": "Url Shortener",
   "main": "index.js",
