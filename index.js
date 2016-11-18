@@ -2,11 +2,13 @@
 let express          = require('express'),
   app                = express(),
   port               = process.env.PORT || 5000,
-  urlShortener      = require('./lib/short-url-controller.js');
+  shortUrlController = require('./lib/short-url-controller.js'),
+  stubController     = require('./lib/stub-controller.js');
 
 app.set('view engine', 'pug');
 
-app.get('/new/:url', urlShortener);
+app.get('/:stub', stubController);
+app.get('/new/:url', shortUrlController);
 app.get('/', function(req, res) {
   res.render('index');
 });
