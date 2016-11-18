@@ -7,11 +7,8 @@ let express          = require('express'),
 
 app.set('view engine', 'pug');
 
-app.get('/:stub', stubController);
-app.get('/new/:url', shortUrlController);
-app.get('/', function(req, res) {
-  res.render('index');
-});
+app.use('/', stubController);
+app.use('/new', shortUrlController);
 
 let listener = app.listen(port, function () {
   console.log('your app is listening on port ' + listener.address().port);
