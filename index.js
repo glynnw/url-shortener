@@ -2,9 +2,9 @@
 let express          = require('express'),
   app                = express(),
   port               = process.env.PORT || 5000,
-  urlShortener      = require('./lib/url-shortener.js');
+  urlShortener      = require('./lib/short-url-controller.js');
 
-app.set('web engine', 'pug');
+app.set('view engine', 'pug');
 
 app.get('/new/:url', urlShortener);
 app.get('/', function(req, res) {
