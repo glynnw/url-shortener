@@ -1,6 +1,9 @@
 {
   "name": "url-shortener-service",
   "version": "0.1.0",
+  "engines": {
+    "node": "7.0.0"
+  },
   "description": "Url Shortener",
   "main": "index.js",
   "scripts": {
