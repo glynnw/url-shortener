@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const shortUrlController = require('./lib/short-url-controller.js');
 const stubController = require('./lib/stub-controller.js');
